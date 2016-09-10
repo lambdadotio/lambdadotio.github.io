@@ -1,0 +1,35 @@
+.lmbd-container{
+  margin-top:15%;
+  margin-left:25%;
+}
+.lmbd-techs{
+  margin-top: -13%;
+  margin-left: 0px;
+  font-size: 40px;
+}
+.lmbd-techs ul li{
+  display: inline-block;
+}
+.lmbd-techs li a{
+  display: block;
+  color: black ;
+}
+.lmbd-github-icon{
+  margin-top: -15%;
+}
+.lmbd-github-icon a{
+  font-size: 25px;
+}
+.lmbd-email{
+  font-family:Courier New, Courier, monospace;
+}
+.lmbd-email i{
+  font-size: 7px;
+}
+#nima{
+  font-size: 13px;
+}
+img {
+    width: 300px;
+    height: 340px;
+}
