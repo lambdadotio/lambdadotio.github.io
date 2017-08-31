@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+  <html class="no-js">
+    <head>
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="stylesheet" href="assets/fonts/font-mfizz.css">
+
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta charset="utf-8"/>
+      <title>λ - lambda</title>
+
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+      <script>
+        jQuery(document).ready(function ($) {
+            $(window).load(function () {
+                setTimeout(function(){
+                    $('.se-pre-con').fadeOut('slow', function () {
+                    });
+                },2000);
+            });
+        });
+      </script>
+
+    </head>
+
+    <body>
+
+      <div class="se-pre-con">
+        <div class="loader">
+          <<span>λ</span>/><span></span>
+        </div>
+      </div>
+
+      <div class="container lmbd-container">
+        <div class="row">
+          <div class="col m7">
+            <div class="card horizontal z-depth-0">
+              <div id="lambda-logo" class="card-image">
+              </div>
+              <div class="card-stacked">
+                <div class="card-content">
+                  <div class="row lmbd-techs">
+                    <center>
+                    <ul>
+                      <li><a target="_blank" href="https://github.com/python"><i class="devicon-python-plain-wordmark"></i></a></li>
+                      <li><a target="_blank" href="https://github.com/php"><i class="devicon-php-plain"></i></a></li>
+                      <li><a target="_blank" href="https://github.com/django"><i class="devicon-django-line"></i></a></li>
+                      <li><a target="_blank" href="https://github.com/angular/angular"><i class="devicon-angularjs-plain-wordmark"></i></a></li>
+                      <li><a target="_blank" href="https://developer.android.com/index.html"><i class="devicon-android-plain"></i></a></li>
+                      <li><a target="_blank" href="https://github.com/torvalds/linux"><i class="devicon-linux-plain"></i></a></li>
+                      <li><a target="_blank" href="https://hadoop.apache.org"><i class="icon-hadoop"></i></a></li>
+                      <li><a target="_blank" href="https://www.mysql.com"><i class="icon-mysql"></i></a></li>
+                      <li><a target="_blank" href="https://www.postgresql.org/"><i class="icon-postgres"></i></a></li>
+                      <li><a target="_blank" href="https://www.w3.org/"><i class="devicon-html5-plain-wordmark lmbd-icon"></i></a></li>
+                      <li><a target="_blank" href="https://github.com/facebook/react"><i class="devicon-react-original-wordmark"></i></a></li>
+                      <li><a target="_blank" href="https://github.com/twbs/bootstrap"><i class="devicon-bootstrap-plain-wordmark"></i></a></li>
+                    </ul>
+                  </center>
+                  </div>
+                  <center class="row lmbd-github-icon">
+                    <a target="_blank" href="https://github.com/lambdadotio" ><i class="devicon-github-plain colored"></i></a>
+                  </center>
+                  <center class="row">
+                    <span class="lmbd-email">
+                      info
+                      <i id="nima" class="fa fa-at" aria-hidden="true"></i>
+                       la
+                       <i class="fa fa-circle" aria-hidden="true"></i>
+                        mbda
+                        <i class="fa fa-circle" aria-hidden="true"></i>
+                        io
+                      </span>
+                  </center>
+                </div>
+                <div class="card-action">
+                  <center>
+                    <span class="lmbd-email">
+                      <i id="nima" class="fa fa-copyright" aria-hidden="true"></i>
+                      2016 λ
+                    </span>
+                  </center>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+      <script type="text/javascript">
+
+      var arrayImg = new Array();
+      var path = "./assets/images/lambdas/"
+      var imagesnum = 5;
+      for (i=0; i<imagesnum;i++){
+        m = i+1
+        arrayImg[i] = path + m + ".png";
+      }
+
+      var num = Math.floor( Math.random() * arrayImg.length );
+      var img = arrayImg[ num ];
+      var imgStr = '<img src="' + img + '">';
+      document.getElementById("lambda-logo").innerHTML = imgStr;
+
+      //just a little sparkle =)))
+      var ul = document.querySelector('ul');
+      for (var i = ul.children.length; i >= 0; i--) {
+          ul.appendChild(ul.children[Math.random() * i | 0]);
+      }
+
+    </script>
+
+
+
+
+    </body>
+  </html>
