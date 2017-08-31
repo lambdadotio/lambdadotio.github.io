@@ -92,6 +92,7 @@
 
         //Return Styles 
         return this.css({
+            'opacity':0.5,
             'backgroundColor':settings.bgColor,
             'zIndex':settings.zIndex
         });
