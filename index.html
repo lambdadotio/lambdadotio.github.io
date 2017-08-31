@@ -8,6 +8,7 @@
       
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="assets/font-mfizz.css">
+      <link rel="stylesheet" href="assets/fakeLoader.css">
 
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       <meta charset="utf-8"/>
@@ -15,6 +16,7 @@
     </head>
 
     <body>
+      <div id="fakeLoader"></div>
       <div class="container lmbd-container">
         <div class="row">
           <div class="col m7">
@@ -71,7 +73,10 @@
       </div>
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
-      <script type="text/javascript">
+
+      <script src="assets/fakeLoader.min.js">
+      
+        <script type="text/javascript">
 
         var arrayImg = new Array();
         var path = "./assets/images/lambdas/"
@@ -93,5 +98,17 @@
         }
         
       </script>
+      
+
+      <script type="text/javascript">
+         $("#fakeLoader").fakeLoader({
+
+            timeToHide:1200, //Time in milliseconds for fakeLoader disappear
+            spinner:"spinner6",//Options: 'spinner1', 'spinner2', 'spinner3', 'spinner4', 'spinner5', 'spinner6', 'spinner7' 
+            bgColor:"#2ecc71", //Hex, RGB or RGBA colors
+
+        });
+      </script>
+
     </body>
   </html>
