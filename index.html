@@ -85,7 +85,13 @@
         var img = arrayImg[ num ];
         var imgStr = '<img src="' + img + '">';
         document.getElementById("lambda-logo").innerHTML = imgStr;
-
+        
+        //just a little sparkle =)))
+        var ul = document.querySelector('ul');
+        for (var i = ul.children.length; i >= 0; i--) {
+            ul.appendChild(ul.children[Math.random() * i | 0]);
+        }
+        
       </script>
     </body>
   </html>
