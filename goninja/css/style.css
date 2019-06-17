@@ -1,0 +1,15 @@
+.x-center {
+    margin: 0 auto 0 auto;
+}
+
+.no-bg {
+    background: transparent;
+}
+
+.pd-standard {
+    margin-bottom: 1.5rem;
+}
+
+.box p {
+    font-size: 1rem;
+}
